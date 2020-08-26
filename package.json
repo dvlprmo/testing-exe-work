@@ -1,0 +1,24 @@
+{
+  "name": "testing-exe-work",
+  "version": "1.0.0",
+  "description": "will be deleted in mins.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvlprmo/testing-exe-work.git"
+  },
+  "author": "Mohammad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvlprmo/testing-exe-work/issues"
+  },
+  "homepage": "https://github.com/dvlprmo/testing-exe-work#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
