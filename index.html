@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +15,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
 
-   <!-- Fixed-top class is to make the nav bar appeared even if you scrol down-->
+    <!-- Fixed-top class is to make the nav bar appeared even if you scrol down-->
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <!--Adding button as show/hide nav for phones screens-->
@@ -27,201 +29,278 @@
             <a class="navbar-brand mr-auto" href="#"> <img src="img/logo.png" height="30" width="41"> </a>
             <div class="navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#"> <span class="fa fa-home fa-lg"></span> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"> <span class="fa fa-info fa-lg"></span> About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"> <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"> <span class="fa fa-home fa-lg"></span>
+                            Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"> <span
+                                class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> <span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"> <span
+                                class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
 
             </div>
         </div>
-
     </nav>
-   <header class="jumbotron">
-       <div class="container">
-           <div class="row row-header">
-               <div class="col-12 col-sm-6">
-                   <h1>Mohammad Ahmed</h1>
-                   <p>this is a programming thing</p>
-               </div>
-               <div class="col-12 col-sm-4 align-self-center">
-                   <img src="img/logo.png" alt="logo" class="img-fluid">
-               </div>
-               <div class="col-12 col-sm align-self-center">
-                <a href="#form-reservation"> <button type="button" class="btn btn-warning mt-2 w-100">Reserve Table </button>  </a>
+
+    <!--Modals for login. it is like the idea of loging in in coursera-->
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="exampleInputEmail3" class="sr-only">Email Address</label>
+                                <input type="email" class="form-control form-control-sm mr-1"
+                                id="exampleInputEmail3" placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="exampleInputPassword3" class="sr-only">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1"
+                                id="exampleInputPassword3" placeholder="Enter Your Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="form-check-label">Remeber me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                            data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
-           </div>
-       </div>
-</header>
-   
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Mohammad Ahmed</h1>
+                    <p>this is a programming thing</p>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <a href="#form-reservation"> <button type="button" class="btn btn-block nav-link 
+                    btn-warning mt-2 w-100" data-toggle="tooltip" data-html="true"
+                            title="Or Call us at <br> <strong>+852 12345678</strong>" data-placement="bottom">Reserve
+                            Table </button> </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
-    <h3>This is Professor</h3>
-</div>
-<div class="col col-sm order-sm-first col-md">
-    <div class="media">
-        <img src="img/uthappizza.png" alt="" class="d-flex mr-3 img-thumbnail align-self-center">
-        <div class="media-body">
-        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">Hot</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-        <p class="d-none d-sm-block">A unique combination of india worka He is the genious of all and he is doing wvejnfjksSFGHSKJGsfkj
-           sfglkLFGsjfhgjsFGJKHOGWRGJKBSVSFJGBSHGBSFJBGKJGHROUHe is the genious of all and he is doing wvejnfjksSFGHSKJGsfkj
-           </p>
-        </div>
-    </div>
-   
-</div>
-</div>
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
-            <h3>Our partner</h3>
-        </div>
-        
-        <div class="col col-sm order-sm-last col-md">
-            <div class="media ">
-                <img class="d-felx mr-3 img-thumbnail order-sm-last" src="img/buffet.png" alt="buffet">
-                <div class="media-body">
-                <h2 class="mt-0">Something Else <span class="badge badge-danger">New</span></h2>
-                <p class="d-none d-sm-block">We take responsbility of doing fine work in the area of what we believe it is the right direction
-                we have build something so fine so that it works just fine in hardest moments but as we go through the
-                the area we see something different.</p>
+                <h3>This is Professor</h3>
             </div>
-           
-        </div>
-        
-       </div>
-       </div>
-
-    <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 order-sm-last col-md-3">
-            <h3>Weekened Grand</h3>
-        </div>
-
-        <div class="col col-sm order-sm-first col-md">
-            <div class="media">
-                <!--if i wanna put the image right use mr-3-->
-                <img class="d-felx mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
-            <div class="media-body">
-                <h2 class="mt-0">Mohammad Ahmed</h2>
-                <h4>Excutive Cheif</h4>
-                <p class="d-none d-sm-block"> He is the genious of all and he is doing wvejnfjksSFGHSKJGsfkj
-                    sfglkLFGsjfhgjsFGJKHOGWRGJKBSVSFJGBSHGBSFJBGKJGHROU
-                </p>
-            </div>
-            
-            </div>
-           
-        </div>
-    </div>
-    <div class="row row-content justify-content-center" id="form-reservation">
-        <div>
-        </div>
-        <div class="col col-sm-6">
-            <div class="card text-white bg-warning border border-secondary" style="max-width: 35rem; height: 25rem;">
-                <div class="card-header">Reserve a table</div>
-
-                <div class="card-body bg-light p-5 d-flex justify-content-around">
-                    <div>
-                        <h5 class="card-title text-dark mt-2">Number of Guests </h5><br> <br>
-                        <h5 class="card-title text-dark mt-2">Date & Time</h5> <br>
-                        
-                    </div>
-                    <div>
-                        <div class="col"> 
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label text-dark" for="inlineRadio1">1</label>
-                              </div> 
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label text-dark" for="inlineRadio2">2</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                <label class="form-check-label text-dark" for="inlineRadio3">3</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                <label class="form-check-label text-dark" for="inlineRadio4">4</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
-                                <label class="form-check-label text-dark" for="inlineRadio5">5</label>
-                              </div>
-                        </div><br><br><br><br>
-                        <div class="d-flex justify-content-around">
-                            <div class="form-row">
-                                <div class="col ">
-                                  <input type="text" class="form-control" placeholder="Date">
-                                </div>
-
-                                <div class="col">
-                                  <input type="text" class="form-control" placeholder="Time">
-                                </div>
-                                
-                              </div>
-                        </div>
-                        <div>
-                            <button type="button" class="btn btn-primary mt-4">Reserve</button>
-                          </div>
-                       
-                        <div>
-
-                        </div>
-                    </div>
-                    
-                  
-                    <div>
-                        
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img src="img/uthappizza.png" alt="" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">Hot</span> <span
+                                class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <p class="d-none d-sm-block">A unique combination of india worka He is the genious of all and he
+                            is doing wvejnfjksSFGHSKJGsfkj
+                            sfglkLFGsjfhgjsFGJKHOGWRGJKBSVSFJGBSHGBSFJBGKJGHROUHe is the genious of all and he is doing
+                            wvejnfjksSFGHSKJGsfkj
+                        </p>
                     </div>
                 </div>
-               
-              </div>
-           
+
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>Our partner</h3>
+            </div>
+
+            <div class="col col-sm order-sm-last col-md">
+                <div class="media ">
+                    <img class="d-felx mr-3 img-thumbnail order-sm-last" src="img/buffet.png" alt="buffet">
+                    <div class="media-body">
+                        <h2 class="mt-0">Something Else <span class="badge badge-danger">New</span></h2>
+                        <p class="d-none d-sm-block">We take responsbility of doing fine work in the area of what we
+                            believe it is the right direction
+                            we have build something so fine so that it works just fine in hardest moments but as we go
+                            through the
+                            the area we see something different.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Weekened Grand</h3>
+            </div>
+
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <!--if i wanna put the image right use mr-3-->
+                    <img class="d-felx mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="alberto">
+                    <div class="media-body">
+                        <h2 class="mt-0">Mohammad Ahmed</h2>
+                        <h4>Excutive Cheif</h4>
+                        <p class="d-none d-sm-block"> He is the genious of all and he is doing wvejnfjksSFGHSKJGsfkj
+                            sfglkLFGsjfhgjsFGJKHOGWRGJKBSVSFJGBSHGBSFJBGKJGHROU
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row row-content justify-content-center" id="form-reservation">
+            <div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="card text-white bg-warning border border-secondary"
+                    style="max-width: 35rem; height: 25rem;">
+                    <div class="card-header">Reserve a table</div>
+
+                    <div class="card-body bg-light p-5 d-flex justify-content-around">
+                        <div>
+                            <h5 class="card-title text-dark mt-2">Number of Guests </h5><br> <br>
+                            <h5 class="card-title text-dark mt-2">Date & Time</h5> <br>
+
+                        </div>
+                        <div>
+                            <div class="col">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label text-dark" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label text-dark" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option3">
+                                    <label class="form-check-label text-dark" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label text-dark" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio5" value="option5">
+                                    <label class="form-check-label text-dark" for="inlineRadio5">5</label>
+                                </div>
+                            </div><br><br><br><br>
+                            <div class="d-flex justify-content-around">
+                                <div class="form-row">
+                                    <div class="col ">
+                                        <input type="text" class="form-control" placeholder="Date">
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Time">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary mt-4">Reserve</button>
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+
+
+                        <div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
-    </div>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 offset-1 col-sm-2">
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./aboutus.html">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-7 col-sm-5"> 
-                <h5>Our Address</h5>
-    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+
                     14535 HighWay, Jeddah SA <br>
                     <i class="fa fa-phone"></i>: 245824875245724O5 <br>
                     <i class="fa fa-fax"></i>: 29R09428534035 <br>
-                    <i class="fa fa-envelope"></i>: nsdnfkjsnfkbs@gmail.com                </address>
+                    <i class="fa fa-envelope"></i>: nsdnfkjsnfkbs@gmail.com </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="www.google.come"> <i
+                                class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="www.google.com"> <i
+                                class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="www.google.com"> <i
+                                class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="www.google.com"> <i
+                                class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="www.google.com"> <i
+                                class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon" href="mailto"> <i class="fa fa-mail fa-lg"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-4 align-self-center">
-                <div class="text-center">
-                    <a class="btn btn-social-icon btn-google" href="www.google.come"> <i class="fa fa-google-plus fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="www.google.com"> <i class="fa fa-facebook fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-linkedin" href="www.google.com"> <i class="fa fa-linkedin fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="www.google.com"> <i class="fa fa-twitter fa-lg"></i></a>
-                    <a class="btn btn-social-icon btn-youtube" href="www.google.com"> <i class="fa fa-youtube fa-lg"></i></a>
-                    <a class="btn btn-social-icon" href="mailto"> <i class="fa fa-mail fa-lg"></i></a>
-                </div>     
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>Copyright 2020 Mohammad</p>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <p>Copyright 2020 Mohammad</p>
-            </div>
-        </div>
-    </div>
-</footer>
-        <!-- jQuery first, then popper.js, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </footer>
+    <!-- jQuery first, then popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
+
 </html>
