@@ -60,5 +60,11 @@ body{
         padding: 15px;
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
+    }
 
+    /* will be make them at the bottom right  */
+    #carouselButton {
+        right: 0px;
+        position: absolute;
+        bottom: 0px;
     }
