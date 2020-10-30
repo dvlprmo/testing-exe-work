@@ -47,3 +47,18 @@ body{
     left: 0;
     min-height: 300px;
 }
+.btns-sec [type='radio'] {
+    display: none; 
+    }
+    .btns-push{
+        margin-left: 205px;
+
+    }
+    .btns-push button{
+
+        border-radius: 5px;
+        padding: 15px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+
+    }
