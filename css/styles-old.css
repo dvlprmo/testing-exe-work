@@ -68,3 +68,7 @@ body{
         position: absolute;
         bottom: 0px;
     }
+    #showform{
+        background-color: wheat;
+        padding: 10px;
+    }

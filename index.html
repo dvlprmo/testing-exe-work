@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-old.css">
     <title>Document</title>
 </head>
 
@@ -39,7 +39,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="btnlogin" onclick="func2()">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -53,14 +53,14 @@
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <h4  class="modal-title">Login</h4>
+                    <button type="button" class="close">
                         &times;
                     </button>
                 </div>
 
-                <div class="modal-body">
-                    <form>
+                <div class="modal-body" id="showlogin">
+                    <form >
                         <div class="form-row">
                             <div class="form-group col-sm-4">
                                 <label for="exampleInputEmail3" class="sr-only">Email Address</label>
@@ -91,18 +91,42 @@
         </div>
     </div>
 
+    
+   
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Mohammad Ahmed</h1>
+                    <p>this is a programming thing</p>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm align-self-center">
+                    <button onclick="func1()" id="btnform" type="button" class="btn btn-block nav-link 
+                    btn-warning mt-2 w-100"title="Or Call us at <br> <strong>+852 12345678</strong>"
+                            data-placement="bottom">Reserve
+                            Table </button> 
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div id="reserveTable" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" id="showform">
                     <h4 class="modal-title">Reserve A Table</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button onclick="func1()" type="button" class="close" data-dismiss="modal">
                         &times;
                     </button>
                 </div>
 
                 <div class="modal-body">
-                    <form>
+                    <form id="showform" >
                         <div class="form-row justify-content-center">
                             <div class="form-group col-sm-2 justify-content-center">
                                 <div>
@@ -183,35 +207,15 @@
                             </div>
                            
                         </div>
+               
+                    </form>
                 </div>
                 
-                </form>
+                
 
             </div>
         </div>
     </div>
-    </div>
-
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Mohammad Ahmed</h1>
-                    <p>this is a programming thing</p>
-                </div>
-                <div class="col-12 col-sm-4 align-self-center">
-                    <img src="img/logo.png" alt="logo" class="img-fluid">
-                </div>
-
-                <div class="col-12 col-sm align-self-center">
-                    <a data-toggle="modal" data-target="#reserveTable"> <button type="button" class="btn btn-block nav-link 
-                    btn-warning mt-2 w-100" data-html="true" title="Or Call us at <br> <strong>+852 12345678</strong>"
-                            data-placement="bottom">Reserve
-                            Table </button> </a>
-                </div>
-            </div>
-        </div>
-    </header>
 
     <div class="container">
         <div class="row row-content">
@@ -343,79 +347,8 @@
 
                 </div>
             </div>
-            <div class="row row-content justify-content-center" id="form-reservation">
-                <div>
-                </div>
-                <div class="col col-sm-6">
-                    <div class="card text-white bg-warning border border-secondary"
-                        style="max-width: 35rem; height: 25rem;">
-                        <div class="card-header">Reserve a table</div>
-
-                        <div class="card-body bg-light p-5 d-flex justify-content-around">
-                            <div>
-                                <h5 class="card-title text-dark mt-2">Number of Guests </h5><br> <br>
-                                <h5 class="card-title text-dark mt-2">Date & Time</h5> <br>
-
-                            </div>
-                            <div>
-                                <div class="col">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio1" value="option1">
-                                        <label class="form-check-label text-dark" for="inlineRadio1">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio2" value="option2">
-                                        <label class="form-check-label text-dark" for="inlineRadio2">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio3" value="option3">
-                                        <label class="form-check-label text-dark" for="inlineRadio3">3</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio4" value="option4">
-                                        <label class="form-check-label text-dark" for="inlineRadio4">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="inlineRadio5" value="option5">
-                                        <label class="form-check-label text-dark" for="inlineRadio5">5</label>
-                                    </div>
-                                </div><br><br><br><br>
-                                <div class="d-flex justify-content-around">
-                                    <div class="form-row">
-                                        <div class="col ">
-                                            <input type="text" class="form-control" placeholder="Date">
-                                        </div>
-
-                                        <div class="col">
-                                            <input type="text" class="form-control" placeholder="Time">
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-primary mt-4">Reserve</button>
-                                </div>
-
-                                <div>
-
-                                </div>
-                            </div>
-
-
-                            <div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+          
+        </div>
         </div>
         <footer class="footer">
             <div class="container">
@@ -466,6 +399,20 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <script>
+
+           // show the login form
+           $(document).ready(function(){
+               $("#btnlogin").click(function() {
+                   $("#loginModal").modal();
+               });
+           });
+           // show the form of the reservation table
+           $(document).ready(function(){
+               $("#btnform").click(function() {
+                   $("#reserveTable").modal();
+               })
+           })
+           
             $(document).ready(function() {
                 $('#mycarousel').carousel({interval: 2000});
                 $("#carouselButton").click(function(){
@@ -481,6 +428,8 @@
                 }
             });
             });
+
+            
         </script>
      
 </body>
